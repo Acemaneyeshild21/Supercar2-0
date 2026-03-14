@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+<title> Supercar-Formulaire de Contact</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ajout d'un padding-top pour éviter que la navbar ne chevauche les coordonnées */
+        .contact-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 0 40px 0; /* Padding top augmenté pour compenser la navbar */
+        }
+
+        .contact-info {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 40px; /* Ajout d'une marge pour espacer des autres sections */
+        }
+        
+        .contact-info h3 {
+            color: #ff5733;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            font-size: 18px;
+            color: #555;
+        }
+        .contact-info i {
+            color: #ff5733;
+            margin-right: 10px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .contact-form, .map-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 45%;
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            resize: none;
+        }
+
+        .contact-form input[type="submit"] {
+            background: #ff5733;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background: #e04c2d;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles du pied de page */
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        footer p, footer a {
+            color: #fff;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #ff5733;
+        }
+        .footer-info {
+            margin-top: 10px;
+        }
+        .footer-social a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .footer-social a:hover {
+            color: #ff5733;
+        }
+
+        /* --- Responsivité --- */
+        @media (max-width: 768px) {
+            .contact-row {
+                flex-direction: column;
+            }
+            .contact-form, .map-container {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .contact-info p {
+                font-size: 16px;
+            }
+            .contact-form h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">SUPERCARS</a>
+    
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="Voitures.html">Voitures</a>
+            <a href="demande_essai.php">Demande d'essai</a>
+            <a href="Service.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    
+        <div class="auth-links">
+            <a href="Login.php">Se connecter</a>
+            <a href="inscription.html">S'inscrire</a>
+        </div>
+    </header>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Informations de Contact</h3>
+            <p><i class="fas fa-phone"></i> Tel: 59353663</p>
+            <p><i class="fas fa-envelope"></i> Email: projetsupercare@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Adresse: quatre bornes, Maurice</p>
+        </div>
+
+        <div class="contact-row">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d14972.290019165566!2d57.465730128872245!3d-20.255827556467466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e0!4m4!1s0x217c5b3655969317%3A0x795f6d613be92d03!3m2!1d-20.2557662!2d57.4778374!4m5!1s0x217c5b3655969317%3A0x795f6d613be92d03!2sSatel%20Computer%20Services%20Ltd.%2C%20Sir%20Virgil%20Naz%20Avenue%2C%20Quatre%20Bornes!3m2!1d-20.2557662!2d57.4778374!5e0!3m2!1sfr!2smu!4v1744823936356!5m2!1sfr!2smu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h2>Formulaire de Contact</h2>
+                <form action="contact.php" method="post">
+                    <input type="text" name="nom" placeholder="Nom" required>
+                    <input type="text" name="adresse" placeholder="Adresse" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="messages" rows="5" placeholder="Votre message..." required></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <footer>
+        <style>
+          footer {
+  background-color: #111;
+  color: white;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h3 {
+  color: #ff5733;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socials a img {
+  width: 22px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover img {
+  transform: scale(1.1);
+  filter: brightness(0) saturate(100%) sepia(1) hue-rotate(-20deg);
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff5733;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: none;
+  }
+}
+
+        </style>
+      
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+              <li> Quatre bornes, Mauritius</li>
+              <li>+230 59 45 67 89</li>
+              <li>contact@supercar.com</li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Suivez-nous</h3>
+            <div class="socials">
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025-2028 Supercars.fr — Tous droits réservés. </p>
+          <div class="footer-links">
+            <a href="/mentions-legales.html">Mentions légales</a>
+            <a href="/politique-confidentialite.html">Confidentialité</a>
+            <a href="/conditions-generales.html">conditions générales</a>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>

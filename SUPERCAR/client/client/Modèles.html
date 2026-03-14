@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Modèles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .modèle {
+            color: #222;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .modèle h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .modèle p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .catalog {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .car {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 10px;
+            width: 300px;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .car img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s, filter 0.3s; 
+        }
+
+        .car img:hover {
+            transform: scale(1.05); 
+            filter: brightness(0.9); 
+        }
+
+        .car h3 {
+            margin: 10px 0 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+        }
+
+        /* Footer de la page */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px; /* Padding autour du footer */
+            font-size: 14px;
+            margin-top: 60px; /* Marge au-dessus du footer */
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">SUPERCARS</a>
+    
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="Voitures.html">Modèles</a>
+            <a href="demande_essai.php">Demande d'essai</a>
+            <a href="Service.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    
+        <div class="auth-links">
+            <a href="Login.php">Se connecter</a>
+            <a href="inscription.html">S'inscrire</a>
+        </div>
+    </header>
+
+
+    <!-- Section principale des modèles -->
+    <section class="modèle">
+        <h1>Découvrez nos Modèles</h1>
+        <p>Explorez notre sélection des meilleures voitures de marques renommées pour leur qualité, performance et design. Trouvez votre prochain véhicule parmi nos modèles.</p>
+    </section>
+    <div class="catalog">
+        <a class="car" href="ford.html">
+            <h3>Ford</h3>
+            <img src="IMAGES/DROF.jpg" alt="Ford">
+        </a>
+        <a class="car" href="nissan.html">
+            <h3>Nissan</h3>
+            <img src="IMAGES/Nissan.jpg" alt="Nissan">
+        </a>
+        <a class="car" href="Mercedes.html">
+            <h3>Mercedes</h3>
+            <img src="IMAGES/Merco.webp" alt="Mercedes">
+        </a>
+        <a class="car" href="toyota.html">
+            <h3>Toyota</h3>
+            <img src="IMAGES/Toyota.webp" alt="Toyota">
+        </a>
+    </div>
+   
+    <!-- Footer de la page -->
+    <footer>
+        <p>&copy; 2025 Toutes les marques et modèles sont protégés par des droits d'auteur.</p>
+        <p>

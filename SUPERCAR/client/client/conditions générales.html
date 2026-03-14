@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions Générales - Supercar</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Conditions générales d'utilisation du site Supercars." />
+  <meta name="keywords" content="supercars, conditions générales, utilisation du site" />
+  <meta name="author" content="Supercar S.A." />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #222;
+      color: white;
+      position: relative;
+    }
+
+    .header .logo {
+      font-size: 28px;
+      color: #ff5733;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .header .logo:hover {
+      color: white;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .auth-buttons a {
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .auth-buttons .btn-primary {
+      background: #ff5733;
+      color: white;
+    }
+
+    .auth-buttons .btn-primary:hover {
+      background: white;
+      color: #ff5733;
+    }
+
+    .auth-buttons .btn-outline-light {
+      background: transparent;
+      color: #ff5733;
+      border: 2px solid #ff5733;
+    }
+
+    .auth-buttons .btn-outline-light:hover {
+      background: #ff5733;
+      color: white;
+    }
+
+    h1 {
+      color: #222;
+      font-size: 30px;
+      text-align: center;
+      border-bottom: 4px solid #ff5733;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #444;
+      margin-top: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #ff5733;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: linear-gradient(to bottom, #333 0%, #111 100%);
+      color: white;
+      font-size: 16px;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 25px 20px;
+    }
+
+    .footer-logo a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff5733;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-logo a:hover {
+      color: white;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #ff5733;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 15px;
+    }
+
+    .footer-socials a img {
+      width: 28px;
+      transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+    }
+
+    .footer-socials a img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px #ff5733;
+      opacity: 0.9;
+    }
+
+    .footer-bottom {
+      background-color: #111;
+      padding: 12px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* ✨ ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 📱 RESPONSIVE DESIGN */
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .auth-buttons {
+        margin-top: 10px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-links {
+        margin: 15px 0;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">SUPERCARS</a>
+    <div class="auth-buttons">
+      <a href="connecter.html" class="btn btn-outline-light">Se connecter</a>
+      <a href="inscription.html" class="btn btn-primary">S'inscrire</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Conditions Générales d'Utilisation</h1>
+    
+    <h2>1. Introduction</h2>
+    <p>Les présentes conditions générales d'utilisation régissent l'accès et l'utilisation du site Supercars.fr.</p>
+
+    <h2>2. Acceptation des Conditions</h2>
+    <p>En accédant à ce site, vous acceptez d'être lié par ces conditions. Si vous n'êtes pas d'accord avec ces conditions, vous ne devez pas utiliser ce site.</p>
+
+    <h2>3. Propriété du Site</h2>
+    <p>Tous les contenus du site Supercars.fr (textes, images, logos, vidéos) sont la propriété exclusive de Supercar S.A. et sont protégés par des droits d'auteur.</p>
+
+    <h2>4. Utilisation du Site</h2>
+    <p>Vous vous engagez à utiliser le site de manière conforme aux lois et régulations en vigueur. Toute utilisation non conforme pourra entraîner une suspension ou un bannissement du site.</p>
+
+    <h2>5. Responsabilité</h2>
+    <p>Supercar S.A. ne peut être tenu responsable des éventuels dommages causés par l'utilisation du site ou des informations qu'il contient.</p>
+
+    <h2>6. Modification des Conditions</h2>
+    <p>Supercar S.A. se réserve le droit de modifier ces conditions à tout moment. Les utilisateurs seront informés de toute modification par publication sur cette page.</p>
+
+    <h2>7. Loi Applicable</h2>
+    <p>Les présentes conditions sont soumises à la législation en vigueur à l'île Maurice.</p>
+
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="#">SUPERCARS</a>
+      </div>
+
+      <div class="footer-links">
+        <a href="mentions-legales.html">Mentions Légales</a>
+        <a href="conditions générales.html">Conditions Générales</a>
+        <a href="politique de confidentialités.html">Politique de Confidentialité</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://facebook.com" target="_blank">
+          <img src="icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="icons/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="icons/instagram.svg" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Supercar. Tous droits réservés.
+    </div>
+  </footer>
+</body>
+</html>

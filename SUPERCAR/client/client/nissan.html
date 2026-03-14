@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NISSAN</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .car-models {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .car-card {
+            background-color: #fff;
+            width: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 2px solid #f5f5f5;
+        }
+
+        .car-card h4 {
+            font-size: 24px;
+            color: #222;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .car-card p {
+            font-size: 16px;
+            color: #666;
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">SUPERCARS</a>
+    
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="Voitures.html">Modèles</a>
+            <a href="demande_essai.php">Demande d'essai</a>
+            <a href="Service.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    
+        <div class="auth-links">
+            <a href="Login.php">Se connecter</a>
+            <a href="inscription.html">S'inscrire</a>
+        </div>
+    </header>
+
+        <h1> Modèles NISSAN</h1>
+    </header>
+
+    <section class="car-models">
+        <div class="car-card">
+            <h4>Nissan Magnite</h4>
+            <img src="IMAGES/Nissan Magnite.jpg" alt="Nissan Magnite">
+            <p>Le nissan magnite est un SUV de famille confort et magniable pour plaire à une famille.</p>
+            <p><strong>Prix : 90 000 €</strong></p>
+            <a href="demande_essai.php">Essayer</a>
+        </div>
+
+        <div class="car-card">
+            <h4>Nissan Gtr34</h4>
+            <img src="IMAGES/NISSAN GT-35.jpeg" alt="Nissan gtr34">
+            <p>Le nissan nissan_gtr34 est un voiture de course à modèle unique, faite pour les compétitions .</p>
+            <p><strong>Prix : 300 000 €</strong></p>
+            <a href="demande_essai.php">Essayer</a>
+        </div>
+
+        <div class="car-card">
+            <h4>Nissan Xtrail</h4>
+            <img src="IMAGES/Nissan xtrail.jpeg" alt="Nissan xtrail">
+            <p>Le Nissan X-Trail est un SUV compact. Il est apprécié pour son côté pratique, sa fiabilité et ses capacités tout-terrain.</p>
+            <p><strong>Prix : 80 000 €</strong></p>
+            <a href="demande_essai.php">Essayer</a>
+        </div>
+
+        <div class="car-card">
+            <h4>Nissan Qashqai</h4>
+            <img src="IMAGES/Nissan qashqai.png" alt="  Nissan">
+            <p>Avec leur design innovant, Nissan Qashqai reflètent votre mode de vie et sont parfaits pour la ville comme pour vos escapades en famille</p>
+            <p><strong>Prix : 32 000 €</strong></p>
+            <a href="demande_essai.php">Essayer</a>
+        </div>
+    </section>
+    <footer>
+        <style>
+          footer {
+            background-color: #111;
+            color: white;
+            padding: 30px 20px;
+            font-family: 'Segoe UI', sans-serif;
+          }
+      
+          .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+      
+          .footer-section {
+            flex: 1 1 200px;
+          }
+      
+          .footer-section h3 {
+            color: #ff5733;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+          }
+      
+          .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+      
+          .footer-section li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+          }
+      
+          .socials {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+          }
+      
+          .socials a img {
+            width: 22px;
+            filter: brightness(0) invert(1);
+            transition: transform 0.3s ease;
+          }
+      
+          .socials a:hover img {
+            transform: scale(1.1);
+            filter: brightness(0) saturate(100%) sepia(1) hue-rotate(-20deg);
+          }
+      
+          .footer-bottom {
+            border-top: 1px solid #333;
+            margin-top: 30px;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 0.85em;
+          }
+      
+          .footer-links {
+            margin-top: 8px;
+          }
+      
+          .footer-links a {
+            margin: 0 10px;
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+          }
+      
+          .footer-links a:hover {
+            color: #ff5733;
+          }
+      
+          @media (max-width: 768px) {
+            .footer-content {
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+            }
+      
+            .footer-section {
+              flex: none;
+            }
+          }
+        </style>
+      
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+              <li>12ᵉ Route Pamplemousses, Mauritius</li>
+              <li>+230 59 45 67 89</li>
+              <li>contact@supercar.com</li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Suivez-nous</h3>
+            <div class="socials">
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025-2028 Supercars.fr — Tous droits réservés. Réalisation & design MCCI SIO.</p>
+          <div class="footer-links">
+            <a href="/mentions-legales.html">Mentions légales</a>
+            <a href="/politique-confidentialite.html">Confidentialité</a>
+            <a href="/conditions générales.html">conditions générales</a>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
