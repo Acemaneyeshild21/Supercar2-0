@@ -1,0 +1,53 @@
+# Variables d'environnement
+.env
+.env.local
+.env.*.local
+
+# Dépendances
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# Fichiers de cache
+*.cache
+.cache/
+cache/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Uploads temporaires
+public/uploads/temp/
+
+# Base de données
+*.sql.bak
+database/backups/
+
+# Tests
+.phpunit.result.cache
+coverage/
+
+# Fichiers temporaires
+tmp/
+temp/
